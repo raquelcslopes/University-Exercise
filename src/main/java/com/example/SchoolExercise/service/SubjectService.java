@@ -14,8 +14,4 @@ public class SubjectService {
     public SubjectService(SubjectRepo subjectRepo) {
         this.subjectRepo = subjectRepo;
     }
-
-    public Subject createSubject (Subject subject) {
-        Optional<Subject> subjectOptional = subjectRepo.
-    }
 }

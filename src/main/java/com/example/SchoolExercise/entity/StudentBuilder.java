@@ -1,5 +1,8 @@
 package com.example.SchoolExercise.entity;
 
+import com.example.SchoolExercise.model.StudentDTO;
+
+
 public final class StudentBuilder {
     private Long id;
     private String firstName;
@@ -7,9 +10,6 @@ public final class StudentBuilder {
     private String gender;
     private String birthday;
     private String email;
-
-    private StudentBuilder() {
-    }
 
     public static StudentBuilder aStudent() {
         return new StudentBuilder();

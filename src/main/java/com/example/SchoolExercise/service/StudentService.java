@@ -25,7 +25,7 @@ public class StudentService {
         Optional<Student> studentOptional = studentRepo.findByEmail(dto.getEmail());
 
         if(studentOptional.isPresent()) {
-            throw new AlreadyExistsException("Already there");
+            throw new AlreadyExistsException("This email is already in use");
         }
 
         Student student = StudentBuilder.aStudent()
@@ -33,6 +33,7 @@ public class StudentService {
                 .lastName(dto.getLastName())
                 .email(dto.getEmail())
                 .build();
+
 
        this.studentRepo.save(student);
     }
