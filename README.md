@@ -1,50 +1,51 @@
 # UniExercise
 
-Este projeto é uma aplicação Spring Boot para gerenciar uma universidade, incluindo entidades como Estudante, Professor, Curso e Disciplina.
+This project is a Spring Boot application for managing a university, including entities such as Student, Teacher, Course, and Subject.
 
-## Funcionalidades
-- Cadastro, listagem, atualização e remoção de estudantes e professores
-- Gerenciamento de cursos e disciplinas
-- Exceções customizadas para regras de negócio
-- Segurança básica com autenticação HTTP
-- Documentação automática via Swagger
-- Persistência de dados com MySQL
-- Logging detalhado
+## Features
+- Register, list, update, and remove students and teachers
+- Management of courses and subjects
+- Custom exceptions for business rules
+- Basic security with HTTP authentication
+- Automatic documentation via Swagger
+- Data persistence with MySQL
+- Detailed logging
 
-## Requisitos
+## Requirements
 - Java 17+
 - Maven
 - MySQL
 
-## Configuração
-1. Clone o repositório:
+## Setup
+1. Clone the repository:
    ```bash
-   git clone <url-do-repo>
+   git clone <repo-url>
    ```
-2. Configure o banco de dados em `src/main/resources/application.properties`:
-   - Usuário, senha e URL do MySQL
-3. Execute as migrations automáticas (Spring JPA)
+2. Configure the database in `src/main/resources/application.properties`:
+   - MySQL user, password, and URL
+3. Run automatic migrations (Spring JPA)
 
-## Executando o Projeto
+## Running the Project
 ```bash
 ./mvnw spring-boot:run
 ```
 
-Acesse a documentação Swagger em: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
+Access the Swagger documentation at: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
 
-## Estrutura do Projeto
-- `controller/` - Controllers REST
-- `entity/` - Entidades JPA
-- `repository/` - Repositórios Spring Data
-- `service/` - Lógica de negócio
-- `exceptions/` - Exceções customizadas
+## Project Structure
+- `controller/` - REST Controllers
+- `entity/` - JPA Entities
+- `repository/` - Spring Data Repositories
+- `service/` - Business logic
+- `exceptions/` - Custom exceptions
 - `model/` - DTOs
-- `securityConfig/` - Configuração de segurança
+- `securityConfig/` - Security configuration
 
-## Autenticação
-Usuário e senha padrão definidos em `application.properties`:
-- Usuário: `admin`
-- Senha: `admin123`
+## Authentication
+Default username and password defined in `application.properties`:
+- Username: `admin`
+- Password: `admin123`
 
-## Licença
-Projeto para fins educacionais.
+## License
+Project for educational purposes.
+
